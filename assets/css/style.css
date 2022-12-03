@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
     background-image: url(../images/background-image.jpeg);
     background-attachment: fixed;
@@ -14,6 +16,8 @@ body {
     font-weight: bolder;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 .navbar, .content {
     width: 93%;
@@ -39,4 +43,6 @@ body {
     padding: 2rem;
     min-width: 25%;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
