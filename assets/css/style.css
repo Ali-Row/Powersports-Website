@@ -1,0 +1,42 @@
+body {
+    background-image: url(../images/background-image.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    background-color: rgb(255, 255, 255) !important;
+    min-height: 7rem;
+    border-top: solid red .3rem;
+    position: sticky;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.navbar, .content {
+    width: 93%;
+}
+.active {
+    color: white !important;
+}
+.nav-link, .navbar-brand {
+    color: black !important;
+    transition: all 200ms;
+}
+.nav-link:hover {
+    color: red !important;
+}
+.content {
+    margin-top: 40rem !important;
+    border-radius: 1rem;
+}
+.what-we-do {
+    border-radius: .5rem;
+    background: red;
+    color: white;
+    padding: 2rem;
+    min-width: 25%;
+    text-align: center;
+}
