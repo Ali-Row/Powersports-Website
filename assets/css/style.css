@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+:root {
+    --main-color: rgb(54, 144, 229);
+    --secondary-color: rgb(32, 101, 166);
+    --white: white;
+    --global-radius: .8rem;
+    --global-transition-time: 190ms;
+}
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
 body {
     background-image: url(../images/background-image.jpeg);
     background-attachment: fixed;
@@ -7,42 +17,76 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.1rem;
+}
+p {
+    font-size: 1rem;
+}
 .navbar {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgba(255, 255, 255, 0.96) !important;
     min-height: 7rem;
-    border-top: solid red .3rem;
+    border-top: solid var(--main-color) .3rem;
     position: sticky;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: var(--global-radius);
+    border-bottom-right-radius: var(--global-radius);
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
-.navbar, .content {
-    width: 93%;
+    font-weight: 400;
+    font-size: 1.1rem;
+    backdrop-filter: blur(6px);
 }
 .active {
-    color: white !important;
+    border-bottom: solid black .2rem;
 }
 .nav-link, .navbar-brand {
     color: black !important;
-    transition: all 200ms;
+    transition: all var(--global-transition-time);
 }
-.nav-link:hover {
-    color: red !important;
+.nav-link:hover, .active:hover {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
 }
 .content {
     margin-top: 40rem !important;
-    border-radius: 1rem;
+    border-radius: var(--global-radius);
+    background-color: rgba(255, 255, 255, 0.96) !important;
 }
 .what-we-do {
     border-radius: .5rem;
-    background: red;
+    background: var(--main-color);
     color: white;
     padding: 2rem;
     min-width: 25%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar, .content, .footer {
+    width: 93%;
+}
+
+.footer {
+    padding: 2rem;
+    background-color: var(--main-color) !important;
+    color: white;
+    margin-top: 4rem;
+    border-top-right-radius: var(--global-radius);
+    border-top-left-radius: var(--global-radius);
+}
+.fa-brands {
+    font-size: 2rem;
+    color: var(--white);
+    transition: all var(--global-transition-time);
+}
+.fa-brands:hover {
+    color: var(--secondary-color);
 }
