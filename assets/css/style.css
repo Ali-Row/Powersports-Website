@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 :root {
-    --main-color: rgb(54, 144, 229);
-    --secondary-color: rgb(32, 101, 166);
+    --main-color: rgb(106, 96, 3);
+    --secondary-color: rgb(255,228,2);
     --white: white;
     --global-radius: .8rem;
     --global-transition-time: 190ms;
@@ -39,6 +39,9 @@ p {
     font-weight: 400;
     font-size: 1.1rem;
     backdrop-filter: blur(6px);
+}
+.logo {
+    max-width: 100px;
 }
 .active {
     border-bottom: solid black .2rem;
@@ -89,4 +92,13 @@ p {
 }
 .fa-brands:hover {
     color: var(--secondary-color);
+}
+.logo-footer {
+    max-width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar, .content, .footer {
+        width: 100%;
+    }
 }
