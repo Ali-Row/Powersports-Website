@@ -72,11 +72,22 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.navbar, .content, .footer {
+.testimonials {
+    border-radius: var(--global-radius);
+}
+.bg-dark {
+    background-color: rgba(33, 37, 41, 0.96) !important;
+}
+.card {
+    background-color: rgb(255, 255, 255);
+}
+.testimonial-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.navbar, .content, .testimonials, .footer {
     width: 93%;
 }
-
 .footer {
     padding: 2rem;
     background-color: var(--main-color) !important;
@@ -98,7 +109,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-    .navbar, .content, .footer {
+    .navbar, .content, .testimonials, .footer {
         width: 100%;
     }
 }
